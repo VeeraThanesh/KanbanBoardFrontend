@@ -1,0 +1,127 @@
+/* ===== Sidebar ===== */
+// .Sidebar {
+//   width: 250px; // or whatever sidebar width you want
+//   background-color: #1f1e33; // dark color you showed in screenshot
+//   color: #fff;
+//   padding: 20px;
+//   box-sizing: border-box;
+// }
+
+/* ===== Sidebar ===== */
+.Sidebar {
+  width: 100%;
+  height: 100vh;
+  padding: 10px 0; // Removed horizontal padding
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.SidebarMenu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.LogoutSection {
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  margin-top: 10px;
+  padding-top: 10px;
+
+  .MenuLink {
+    color: #ff7875;
+    &:hover {
+      background-color: rgba(255, 77, 79, 0.08);
+      color: #ffa39e;
+    }
+  }
+}
+
+/* ===== Main Menu Item ===== */
+.MenuItem {
+  margin-bottom: 4px;
+}
+
+.MenuLink {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 18px;
+  margin: 0 10px; // Added horizontal margin
+  border-radius: 8px; // Added rounded corners
+  color: #cfd2dc;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.MenuLink:hover {
+  background-color: #2a2a40;
+  color: #ffffff;
+}
+
+/* Icon size */
+.MenuLink .Icon {
+  display: flex;
+  font-size: 20px;
+}
+
+/* Text */
+.MenuLink .Title {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Active main link */
+.MenuLink.Active {
+  background-color: rgba(255, 255, 255, 0.15); // Glassmorphism-like highlight
+  color: #ffffff;
+  // border-left: 4px solid #6c63ff; // Removed border-left for a cleaner look
+}
+
+/* ===== Sub Menu ===== */
+.SubMenu {
+  margin-left: 40px;
+  margin-top: 6px;
+}
+
+.SubMenu li {
+  margin-bottom: 4px;
+}
+
+.SubMenuLink {
+  display: block;
+  padding: 8px 12px;
+  font-size: 13px;
+  color: #b5b8c5;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.SubMenuLink:hover {
+  color: #ffffff;
+}
+
+/* Active sub link */
+.SubMenuLink.Active {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+/* ===== Scrollbar (optional, nice) ===== */
+.Sidebar {
+  overflow-y: auto;
+}
+
+.Sidebar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.Sidebar::-webkit-scrollbar-thumb {
+  background-color: #444;
+  border-radius: 3px;
+}

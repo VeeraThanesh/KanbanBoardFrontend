@@ -1,0 +1,82 @@
+/* Center the login box */
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f3f4f6;
+}
+
+/* Login box style */
+.loginBox {
+  width: 350px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.loginBox h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Input group */
+.inputGroup {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.inputGroup label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #555;
+}
+
+.inputGroup input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: all 0.2s;
+}
+
+.inputGroup input:focus {
+  border-color: #4f46e5;
+  box-shadow: 0 0 4px rgba(79, 70, 229, 0.3);
+}
+
+/* Login button */
+.loginBtn {
+  width: 100%;
+  padding: 10px;
+  background: #4f46e5;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.loginBtn:hover {
+  background: #4338ca;
+}
+
+/* Footer text */
+.signupText {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.signupText a {
+  color: #4f46e5;
+  text-decoration: none;
+}
+
+.signupText a:hover {
+  text-decoration: underline;
+}

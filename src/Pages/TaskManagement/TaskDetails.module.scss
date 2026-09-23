@@ -1,0 +1,177 @@
+.container {
+  padding: 2rem;
+  background-color: #f8f9fc;
+  min-height: 100vh;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.backButton {
+  margin-bottom: 1.5rem !important;
+  color: #5e6c84 !important;
+  text-transform: none !important;
+  font-weight: 500 !important;
+  &:hover {
+    background-color: rgba(9, 30, 66, 0.08) !important;
+  }
+}
+
+.mainPaper {
+  border-radius: 12px !important;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05) !important;
+  border: 1px solid #dfe1e6 !important;
+}
+
+.header {
+  padding: 0.75rem 1.5rem;
+  border-bottom: 1px solid #dfe1e6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+}
+
+.topNav {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.headerActions {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.contentWrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  background: white;
+  transition: grid-template-columns 0.3s ease;
+  height: calc(100vh - 130px);
+
+  &.withSidebar {
+    grid-template-columns: 1fr 400px;
+  }
+
+  @media (max-width: 960px) {
+    grid-template-columns: 1fr !important;
+    height: auto;
+  }
+}
+
+.mainContent {
+  padding: 2rem;
+  width: 100%;
+  overflow-y: auto;
+
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #dfe1e6;
+    border-radius: 3px;
+  }
+}
+
+.taskTitleSection {
+  margin-bottom: 2rem;
+  .titleText {
+    color: #172b4d;
+    font-weight: 700;
+  }
+}
+
+.sidebar {
+  padding: 1.5rem;
+  background-color: white;
+  border-left: 1px solid #dfe1e6;
+  height: 100%;
+  overflow-y: auto;
+
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #dfe1e6;
+    border-radius: 3px;
+  }
+}
+
+.section {
+  margin-bottom: 2.5rem;
+}
+
+.sectionLabel {
+  color: #172b4d;
+  font-weight: 700 !important;
+  margin-bottom: 0.75rem !important;
+}
+
+.addWorkLogBtn, .addBugBtn {
+  background-color: #006644 !important;
+  text-transform: none !important;
+  font-size: 0.75rem !important;
+  font-weight: 600 !important;
+  &:hover {
+    background-color: #004d33 !important;
+  }
+}
+
+.sidebarSection {
+  margin-bottom: 1.25rem;
+  display: flex;
+  align-items: center; // Center vertically for better alignment with inputs
+  gap: 1rem;
+  
+  .label {
+    flex-shrink: 0;
+    width: 130px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #5e6c84;
+    margin: 0;
+  }
+
+  .valueContainer {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+    color: #172b4d;
+    font-size: 0.875rem;
+    font-weight: 500;
+
+    :global(.MuiInputBase-root) {
+      width: 100%;
+      max-width: 160px; // Limit width to keep it tidy
+      font-size: 0.875rem;
+      background-color: transparent !important;
+      
+      &:hover {
+        background-color: #f4f5f7 !important;
+      }
+
+      fieldset {
+        border: none !important; // Remove borders for a cleaner look like the image
+      }
+
+      input {
+        text-align: right;
+        padding: 4px 8px;
+      }
+      
+      .MuiSelect-select {
+        text-align: right !important;
+        padding-right: 24px !important;
+      }
+    }
+  }
+}
+
+.historySection {
+  margin-top: 2rem;
+  padding: 1rem 0;
+  border-top: 1px solid #dfe1e6;
+}
+
+

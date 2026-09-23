@@ -1,0 +1,85 @@
+.container {
+  height: 100vh;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  background: #fff;
+  padding: 20px;
+  margin: 0;
+  position: relative;
+}
+
+.imageWrapper {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin-bottom: 20px;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  user-select: none;
+}
+
+/* Common button styles */
+.navButton {
+  position: absolute;
+  padding: 6px 12px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: none;
+  background-color: #4f46e5;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  user-select: none;
+}
+
+.navButton:hover {
+  background-color: #4338ca;
+}
+
+/* Position buttons around the image */
+.top {
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.bottom {
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.left {
+  top: 50%;
+  left: -90px;
+  transform: translateY(-50%);
+}
+
+.right {
+  top: 50%;
+  right: -120px;
+  transform: translateY(-50%);
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.text {
+  font-size: 16px;
+  max-width: 600px;
+  color: #555;
+}
